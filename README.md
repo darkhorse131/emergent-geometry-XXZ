@@ -1,0 +1,23 @@
+# Emergent Geometry from Mutual Information in the XXZ Spin Chain
+
+This repository contains the full reproducibility code and environment for the paper:
+
+> **Leighton-Trudel (2025)**  
+> *Emergent Distance from Mutual Information in the Critical 1‑D XXZ Spin Chain*
+
+## 📁 Contents
+
+- `Emergent-Geometry-XXZ-Code/`  
+  - `src/` — Simulation and analysis code (DMRG, MI tools, validation scripts)  
+  - `Jupyter Notebook/` — Notebook used to generate all paper figures  
+  - `Tests/` — Model validation tests  
+  - `environment_FSS-env.yml` — Conda environment file for full reproducibility
+
+## 🚀 Getting Started
+
+To recreate results from the paper:
+
+```bash
+conda env create -f environment_FSS-env.yml
+conda activate FSS-env
+jupyter notebook "Jupyter Notebook/emergent-geometry-XXZ-figs.ipynb"
